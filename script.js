@@ -460,3 +460,59 @@ document.getElementById("prevSlide").addEventListener("click", prevSlide);
 imageEl.addEventListener("click", nextSlide);
 
 updateContent();
+
+const reviews = [
+  {
+    title: "Revolutionized our FIBC production efficiency",
+    content:
+      "The industrial Twister machines have optimized our FIBC production efficiency. Precision engineering delivers consistent yarn strength.",
+    name: "Johann Mueller",
+    role: "Production Director",
+  },
+  {
+    title: "Excellent support for specialized applications",
+    content:
+      "The durability and performance of Meera's machinery equipment has significantly improved our marine product quality.",
+    name: "Carlos Mendoza",
+    role: "Operations Manager",
+  },
+  {
+    title: "Excellent support for specialized applications",
+    content:
+      "The durability and performance of Meera's machinery equipment has significantly improved our marine product quality.",
+    name: "Carlos Mendoza",
+    role: "Operations Manager",
+  },
+  {
+    title: "Provides the exact specifications we need",
+    content:
+      "For our technical textile applications, Meera delivered precise machines matching exact requirements.",
+    name: "Rajesh Kumar",
+    role: "Manufacturing Head",
+  },
+];
+
+const track = document.getElementById("testimonialTrack");
+
+// Duplicate data for seamless infinite scroll
+const allReviews = [...reviews, ...reviews];
+
+allReviews.forEach((review) => {
+  const card = document.createElement("div");
+  card.classList.add("testimonial-card");
+
+  card.innerHTML = `
+    <div class="quote-icon">“</div>
+    <h4>${review.title}</h4>
+    <p>${review.content}</p>
+    <div class="user">
+      <div class="avatar"></div>
+      <div class="user-info">
+        <strong>${review.name}</strong><br/>
+        ${review.role}
+      </div>
+    </div>
+  `;
+
+  track.appendChild(card);
+});

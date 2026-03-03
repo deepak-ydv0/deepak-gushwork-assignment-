@@ -824,8 +824,100 @@ tbody tr:hover {
   right: 10px;
 }
 
-@media (max-width: 900px) {
-  .process-content {
-    flex-direction: column;
+/* testimonial-section */
+
+.testimonial-section {
+  background: #f3f4f6;
+  padding: 80px 20px;
+  font-family: "Segoe UI", sans-serif;
+  /* overflow: hidden; */
+}
+
+.testimonial-container {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+}
+
+.subtitle {
+  color: #6b7280;
+  margin-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+/* Wrapper */
+.testimonial-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Track */
+.testimonial-track {
+  display: flex;
+  gap: 20px;
+  animation: scroll 30s linear infinite;
+}
+
+/* Pause on hover */
+.testimonial-wrapper:hover .testimonial-track {
+  animation-play-state: paused;
+}
+
+/* Card */
+.testimonial-card {
+  width: 250px; /* IMPORTANT FIX */
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+.quote-icon {
+  font-size: 28px;
+  color: #1e3a8a;
+  margin-bottom: 12px;
+}
+
+.testimonial-card h4 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.testimonial-card p {
+  font-size: 13px;
+  color: #6b7280;
+  margin-bottom: 18px;
+  line-height: 1.6;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #e5e7eb;
+}
+
+.user-info {
+  font-size: 12px;
+  color: #374151;
+}
+
+/* Animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }
