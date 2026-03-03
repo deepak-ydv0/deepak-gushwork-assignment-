@@ -333,6 +333,62 @@ const stepsData = [
       "https://picsum.photos/id/1024/800/500",
     ],
   },
+
+  {
+    tab: "Sizing",
+    title: "Precision Sizing Process",
+    description:
+      "Vacuum sizing tanks ensure precise outer diameter and wall thickness uniformity.",
+    points: ["PE100 grade material", "Optimal molecular weight distribution"],
+    images: [
+      "https://picsum.photos/id/1011/800/500",
+      "https://picsum.photos/id/1015/800/500",
+    ],
+  },
+  {
+    tab: "Quality Control",
+    title: "Rigorous Quality Control",
+    description:
+      "Advanced testing and inspection ensure every product meets the highest standards.",
+    points: ["Dimensional accuracy checks", "Material strength testing"],
+    images: [
+      "https://picsum.photos/id/1016/800/500",
+      "https://picsum.photos/id/1018/800/500",
+    ],
+  },
+  {
+    tab: "Marking",
+    title: "Precision Marking System",
+    description:
+      "Advanced marking systems ensure clear identification and traceability.",
+    points: ["High-resolution printing", "Durability and visibility"],
+    images: [
+      "https://picsum.photos/id/1020/800/500",
+      "https://picsum.photos/id/1024/800/500",
+    ],
+  },
+  {
+    tab: "Cutting",
+    title: "Precision Cutting Process",
+    description:
+      "Advanced cutting systems ensure precise length and clean edges.",
+    points: ["High-precision cutting blades", "Automated length control"],
+    images: [
+      "https://picsum.photos/id/1011/800/500",
+      "https://picsum.photos/id/1015/800/500",
+    ],
+  },
+  {
+    tab: "Packaging",
+    title: "Rigorous Packaging Process",
+    description:
+      "Careful packaging ensures safe delivery and maintains product integrity.",
+    points: ["Durable packaging materials", "Secure sealing and labeling"],
+    images: [
+      "https://picsum.photos/id/1016/800/500",
+      "https://picsum.photos/id/1018/800/500",
+    ],
+  },
 ];
 
 const stepper = document.getElementById("stepper");

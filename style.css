@@ -738,6 +738,21 @@ tbody tr:hover {
   flex-wrap: wrap;
   gap: 10px;
   margin: 40px 0;
+  position: relative;
+}
+
+.stepper::before {
+  content: "";
+  position: absolute;
+  top: 50%; /* ✅ Center vertically */
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #d1d5db;
+  transform: translateY(-50%);
+  z-index: 0;
+  left: 37px;
+  width: 90%;
 }
 
 .step {
@@ -747,6 +762,8 @@ tbody tr:hover {
   cursor: pointer;
   background: #fff;
   font-size: 14px;
+  position: relative;
+  z-index: 1;
 }
 
 .step.active {
