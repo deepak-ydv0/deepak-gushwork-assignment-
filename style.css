@@ -400,6 +400,7 @@ h1 {
 .spec-container {
   width: 80%;
   padding: 80px 0;
+  text-align: center;
 }
 
 .spec-section h2 {
@@ -407,10 +408,11 @@ h1 {
   margin-bottom: 10px;
 }
 
-.subtitle {
+.spec-subtitle {
   color: #94a3b8;
   margin-bottom: 40px;
   font-size: 15px;
+  text-align: center;
 }
 
 .table-wrapper {
@@ -420,16 +422,16 @@ h1 {
   border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
-table {
+.table-wrapper table {
   width: 100%;
   border-collapse: collapse;
 }
 
-thead {
+.table-wrapperthead {
   background: rgba(255, 255, 255, 0.08);
 }
 
-th {
+.table-wrapper th {
   text-align: left;
   padding: 16px;
   font-size: 13px;
@@ -437,14 +439,14 @@ th {
   color: #cbd5e1;
 }
 
-td {
+.table-wrapper td {
   padding: 16px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   font-size: 14px;
   color: #e2e8f0;
 }
 
-tbody tr:hover {
+.table-wrapper tbody tr:hover {
   background: rgba(255, 255, 255, 0.05);
   transition: 0.3s;
 }
@@ -481,10 +483,11 @@ tbody tr:hover {
   justify-content: center;
 }
 
-.container {
+.features-container {
   /* max-width: 1200px; */
   margin: auto;
   width: 80%;
+  text-align: center;
 }
 
 .features-section h2 {
@@ -493,8 +496,9 @@ tbody tr:hover {
   color: #111827;
 }
 
-.subtitle {
+.features-subtitle {
   color: #6b7280;
+  margin: auto;
   margin-bottom: 40px;
   max-width: 650px;
 }
@@ -561,7 +565,7 @@ tbody tr:hover {
   font-family: "Segoe UI", sans-serif;
 }
 
-.container {
+.faq-container {
   max-width: 900px;
   margin: auto;
 }
@@ -569,6 +573,7 @@ tbody tr:hover {
 .faq-title {
   font-size: 28px;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .faq-title span {
@@ -626,8 +631,8 @@ tbody tr:hover {
   font-family: "Segoe UI", sans-serif;
 }
 
-.container {
-  max-width: 1300px;
+.applications-container {
+  width: 80%;
   margin: auto;
 }
 
@@ -727,7 +732,7 @@ tbody tr:hover {
 }
 
 .container {
-  max-width: 1200px;
+  width: 80%;
   margin: auto;
   text-align: center;
 }
