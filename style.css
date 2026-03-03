@@ -1244,15 +1244,13 @@ h1 {
   align-items: center;
 }
 
-.footer-logo h3 {
+.footer-logo {
   margin: 0;
   font-weight: 700;
-}
 
-.footer-logo span {
-  display: block;
-  font-size: 14px;
-  font-weight: 500;
+  img {
+    width: 109px;
+  }
 }
 
 .footer-tagline {
@@ -1287,7 +1285,7 @@ h1 {
   text-decoration: none;
   margin-bottom: 8px;
 
-  img{
+  img {
     width: 16px;
     height: 16px;
   }
@@ -1301,7 +1299,7 @@ h1 {
 .social-icons {
   margin-top: 10px;
   display: flex;
-  img{
+  img {
     width: 16px;
     height: 16px;
   }
