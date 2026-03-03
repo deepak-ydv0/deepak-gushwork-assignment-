@@ -1044,3 +1044,71 @@ tbody tr:hover {
 .portfolio-cta button:hover {
   background: #1d4ed8;
 }
+
+.resources-section {
+  background: #f3f4f6;
+  padding: 80px 20px;
+  font-family: "Segoe UI", sans-serif;
+  text-align: center;
+}
+
+.resources-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.resources-subtitle {
+  color: #6b7280;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.resources-table {
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+
+.resources-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.resources-table tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.resources-tabletr:last-child {
+  border-bottom: none;
+}
+
+.resources-table td {
+  padding: 0px 20px;
+  text-align: left;
+  font-size: 14px;
+  color: black;
+}
+
+.download-cell {
+  text-align: right;
+}
+
+.download-btn {
+  color: #1e3a8a;
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: 0.3s;
+}
+
+.download-btn:hover {
+  text-decoration: underline;
+}
+
+.download-icon {
+  font-size: 14px;
+}
