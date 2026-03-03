@@ -516,3 +516,43 @@ allReviews.forEach((review) => {
 
   track.appendChild(card);
 });
+
+const portfolioData = [
+  {
+    title: "HDPE Fittings & Accessories",
+    description:
+      "Complete range of electrofusion and butt fusion fittings, including elbows, tees, reducers, and couplers.",
+    image: "https://picsum.photos/id/1011/500/300",
+  },
+  {
+    title: "Professional Installation Services",
+    description:
+      "Expert installation and fusion welding services ensuring optimal system performance.",
+    image: "https://picsum.photos/id/1015/500/300",
+  },
+  {
+    title: "PE-RT Heating Pipes",
+    description:
+      "Polyethylene of Raised Temperature resistance pipes ideal for underfloor heating.",
+    image: "https://picsum.photos/id/1016/500/300",
+  },
+];
+
+const portfolioGrid = document.getElementById("portfolioGrid");
+
+portfolioData.forEach((item) => {
+  const card = document.createElement("div");
+  card.classList.add("portfolio-card");
+
+  card.innerHTML = card.innerHTML = `
+  <h4>${item.title}</h4>
+  <p>${item.description}</p>
+
+  <div class="card-bottom">
+    <img src="${item.image}" alt="${item.title}" />
+    <button class="learn-btn">Learn More</button>
+  </div>
+  `;
+
+  portfolioGrid.appendChild(card);
+});
