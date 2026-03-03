@@ -1117,3 +1117,100 @@ h1 {
 .download-icon {
   font-size: 14px;
 }
+
+.cta-section {
+  background: #f3f4f6;
+  padding: 80px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.cta-container {
+  width: 80%;
+  margin: auto;
+  background: #1e2a78;
+  border-radius: 20px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  color: white;
+}
+
+/* Left Side */
+.cta-left {
+  flex: 1;
+}
+
+.cta-left h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.cta-subtitle {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #d1d5db;
+}
+
+.cta-contact {
+  font-size: 13px;
+  color: #cbd5e1;
+}
+
+/* Form Card */
+.cta-form-card {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 25px;
+  color: #111827;
+  max-width: 380px;
+}
+
+.cta-form-card h4 {
+  margin-bottom: 15px;
+}
+
+.cta-form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cta-form-card input,
+.cta-form-card select {
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #e5e7eb;
+  font-size: 13px;
+}
+
+.phone-group {
+  display: flex;
+  gap: 8px;
+}
+
+.phone-group select {
+  width: 30%;
+}
+
+.phone-group input {
+  width: 70%;
+}
+
+.cta-form-card button {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  background: #111827;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.cta-form-card button:hover {
+  background: #1e3a8a;
+}
