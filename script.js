@@ -22,6 +22,10 @@ const closeBtn = document.getElementById("closeModal");
 const callbackModal = document.getElementById("callbackModal");
 const ctaBtn = document.querySelector(".cta-btn");
 const closeCallback = document.getElementById("closeCallback");
+const container = document.querySelector(".main-slide");
+const img = document.getElementById("mainImage");
+const lens = document.querySelector(".zoom-lens");
+const result = document.getElementById("zoomResult");
 
 let currentIndex = 0;
 
@@ -284,3 +288,44 @@ ctaBtn.addEventListener("click", () => {
 closeCallback.addEventListener("click", () => {
   callbackModal.classList.remove("active");
 });
+
+container.addEventListener("mouseenter", () => {
+  lens.style.display = "block";
+  result.style.display = "block";
+
+  result.style.backgroundImage = `url(${img.src})`;
+});
+
+container.addEventListener("mouseleave", () => {
+  lens.style.display = "none";
+  result.style.display = "none";
+});
+
+container.addEventListener("mousemove", moveLens);
+
+function moveLens(e) {
+  const rect = img.getBoundingClientRect();
+
+  let x = e.clientX - rect.left;
+  let y = e.clientY - rect.top;
+
+  x = x - lens.offsetWidth / 2;
+  y = y - lens.offsetHeight / 2;
+
+  if (x < 0) x = 0;
+  if (y < 0) y = 0;
+
+  if (x > img.width - lens.offsetWidth) x = img.width - lens.offsetWidth;
+
+  if (y > img.height - lens.offsetHeight) y = img.height - lens.offsetHeight;
+
+  lens.style.left = x + "px";
+  lens.style.top = y + "px";
+
+  const zoom = 2;
+
+  result.style.backgroundSize =
+    img.width * zoom + "px " + img.height * zoom + "px";
+
+  result.style.backgroundPosition = "-" + x * zoom + "px -" + y * zoom + "px";
+}

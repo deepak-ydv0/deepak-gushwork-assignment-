@@ -122,17 +122,53 @@ img {
   min-width: 0;
 }
 
-/* Carousel */
 .carousel-container {
-  width: 100%;
+  /* display:flex; */
+  gap: 20px;
+  align-items: flex-start;
 }
 
 .main-slide {
   position: relative;
-  border-radius: 16px;
+  width: 450px;
   overflow: hidden;
+  border-radius: 12px;
 }
 
+.main-slide img {
+  width: 100%;
+  display: block;
+}
+
+/* lens */
+
+.zoom-lens {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border: 2px solid white;
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: none;
+  cursor: crosshair;
+}
+
+/* OUTSIDE ZOOM BOX */
+
+.zoom-result {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+
+  background-repeat: no-repeat;
+  background-size: 200%;
+
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -20%;
+}
 .arrow {
   position: absolute;
   top: 50%;
