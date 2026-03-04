@@ -131,7 +131,6 @@ img {
 
 .main-slide {
   position: relative;
-  width: 450px;
   overflow: hidden;
   border-radius: 12px;
   max-width: 435px;
@@ -368,7 +367,7 @@ h1 {
   padding: 60px 5%;
 }
 .spec-container {
-  max-width: 1200px;
+  width: 80%;
   margin: 0 auto;
 }
 .spec-container h2 {
@@ -395,6 +394,7 @@ table {
 #specTableBody td {
   padding: 16px;
   text-align: left;
+  word-break: break-all;
   /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
 }
 #specTableBody th {
@@ -1222,7 +1222,8 @@ table {
 
 .footer-column a,
 .footer-column p {
-  display: block;
+  display: flex;
+  gap: 2px;
   font-size: 13px;
   color: #6b7280;
   text-decoration: none;
