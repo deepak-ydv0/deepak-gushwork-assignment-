@@ -16,6 +16,9 @@ const imageEl = document.getElementById("stepImage");
 const nextBtn = document.getElementById("nextBtn");
 const prevBtn = document.getElementById("prevBtn");
 const resourcesBody = document.getElementById("resourcesBody");
+const modal = document.getElementById("catalogModal");
+const openBtn = document.querySelector(".download-btn");
+const closeBtn = document.getElementById("closeModal");
 
 let currentIndex = 0;
 
@@ -261,4 +264,12 @@ resourcesData.forEach((resource) => {
   `;
 
   resourcesBody.appendChild(row);
+});
+
+openBtn.addEventListener("click", () => {
+  modal.classList.add("active");
+});
+
+closeBtn.addEventListener("click", () => {
+  modal.classList.remove("active");
 });
