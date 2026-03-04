@@ -19,6 +19,9 @@ const resourcesBody = document.getElementById("resourcesBody");
 const modal = document.getElementById("catalogModal");
 const openBtn = document.querySelector(".download-btn");
 const closeBtn = document.getElementById("closeModal");
+const callbackModal = document.getElementById("callbackModal");
+const ctaBtn = document.querySelector(".cta-btn");
+const closeCallback = document.getElementById("closeCallback");
 
 let currentIndex = 0;
 
@@ -272,4 +275,12 @@ openBtn.addEventListener("click", () => {
 
 closeBtn.addEventListener("click", () => {
   modal.classList.remove("active");
+});
+
+ctaBtn.addEventListener("click", () => {
+  callbackModal.classList.add("active");
+});
+
+closeCallback.addEventListener("click", () => {
+  callbackModal.classList.remove("active");
 });
