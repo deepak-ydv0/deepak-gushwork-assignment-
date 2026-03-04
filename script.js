@@ -83,43 +83,43 @@ featuresData.forEach((item) => {
 });
 
 // Render FAQs dynamically
-faqData.forEach((item, index) => {
-  const faqItem = document.createElement("div");
-  faqItem.classList.add("faq-item");
+faqData.forEach((faq) => {
+  const item = document.createElement("div");
 
-  if (index === 0) faqItem.classList.add("active"); // First open by default
+  item.className = "faq-item";
 
-  faqItem.innerHTML = `
+  item.innerHTML = `
     <div class="faq-question">
-      ${item.question}
-      <span class="icon">${index === 0 ? "⌃" : "⌄"}</span>
+      ${faq.question}
+      <span class="icon">⌄</span>
     </div>
     <div class="faq-answer">
-      ${item.answer}
+      ${faq.answer}
     </div>
   `;
 
-  faqList.appendChild(faqItem);
+  faqList.appendChild(item);
 });
 
 // Accordion logic
 
-faqItems.forEach((item) => {
-  const question = item.querySelector(".faq-question");
+faqList.addEventListener("click", (e) => {
+  const question = e.target.closest(".faq-question");
+  if (!question) return;
 
-  question.addEventListener("click", () => {
-    faqItems.forEach((i) => {
-      if (i !== item) {
-        i.classList.remove("active");
-        i.querySelector(".icon").textContent = "⌄";
-      }
-    });
+  const item = question.parentElement;
+  const icon = question.querySelector(".icon");
 
-    item.classList.toggle("active");
-
-    const icon = item.querySelector(".icon");
-    icon.textContent = item.classList.contains("active") ? "⌃" : "⌄";
+  document.querySelectorAll(".faq-item").forEach((faq) => {
+    if (faq !== item) {
+      faq.classList.remove("active");
+      faq.querySelector(".icon").textContent = "⌄";
+    }
   });
+
+  item.classList.toggle("active");
+
+  icon.textContent = item.classList.contains("active") ? "⌃" : "⌄";
 });
 
 // Render Cards
