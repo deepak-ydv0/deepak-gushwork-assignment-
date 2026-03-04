@@ -1,3 +1,4 @@
+import "./style.css";
 const mainImage = document.getElementById("mainImage");
 const thumbs = document.querySelectorAll(".thumb");
 const leftBtn = document.querySelector(".arrow.left");
