@@ -110,6 +110,13 @@ img {
   .hero-content {
     flex-direction: column;
   }
+  .hero-right {
+    order: 1;
+  }
+
+  .hero-left {
+    order: 2;
+  }
 }
 
 .hero-left {
